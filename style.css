@@ -1,0 +1,116 @@
+*, .about-page,  {
+  box-sizing: border-box;
+}
+.img-fluid {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.about-page {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(assets/why-us.png);
+    background-size: cover;
+    background-position: center;
+    color: #efefef;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height:600px;
+}
+@media only screen and (max-width: 768px){
+  .about-page{
+    height:700px;
+  }
+  .conwd {
+    text-align: center;
+  }
+}
+.conwd h1 {
+  font-size: 40px;
+  background-color: #005aa3;
+  color:#fff;
+  height:50px;
+  width:250px;
+  border-radius: 10px;
+  text-align: center;
+}
+.btn1 {
+  text-decoration: none;
+}
+.pag1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: -2em;
+}
+.headline {
+  text-align: center;
+
+}
+.lastsec {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3em;
+}
+/*hr styling*/
+.offer {
+  padding-top: 1em;
+}
+
+hr {
+    border: solid;
+    border-top: 3px double #333;
+    color:white;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+hr:after {
+    background: #fff;
+    content: 'About us';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+/*hover */
+.nav-link:hover {
+  background-color: #4a95ff;
+}
+.footer {
+    font-size: .9em;
+    color: #fff;
+    padding: 1.1em 2em;
+    letter-spacing: 1px;
+    display: inline-block;
+    -webkit-transition: 0.5s all;
+}
+#footer {
+  margin-top: 3em;
+}
+
+/*mobile query small screen*/
+
+@media only screen and (max-width: 768px){
+  .lastsec{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1em;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+  }
+}
+@media only screen and (max-width: 768px){
+  .about-page {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1em;
+     -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+  }
+}
+.con1 {
+  display:grid;
+  grid-template-columns: 300px, 40px;
+}
+.img01 {
+  border-radius: 50%;
+}
